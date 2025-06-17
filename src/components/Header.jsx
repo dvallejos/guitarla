@@ -1,4 +1,4 @@
-import { Fragment, useMemo } from "react";
+import { Fragment } from "react";
 
 /**
  * Header component
@@ -10,16 +10,7 @@ import { Fragment, useMemo } from "react";
  * - increaseQuantity: function to increment quantity by ID
  * - decreaseCart: function to decrement quantity by ID
  */
-export default function Header({ cart, deleteToCart, removeFromCart, increaseQuantity, decreaseCart }) {
-
-    // Check if cart is empty (recalculated only when 'cart' changes)
-    const isEmpty = useMemo(() => cart.length === 0, [cart]);
-
-    // Calculate total price of the cart (recalculated only when 'cart' changes)
-    const cartTotal = useMemo(() =>
-            cart.reduce((total, item) => total + (item.quantity * item.price), 0),
-        [cart]
-    );
+export default function Header({ cart, deleteToCart, removeFromCart, increaseQuantity, decreaseCart,isEmpty,cartTotal }) {
 
     return (
         <Fragment>
