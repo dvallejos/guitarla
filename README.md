@@ -84,31 +84,13 @@ npm install
 npm run dev
 ```
 
-Then go to:
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-```
-http://localhost:5173/
-```
+Currently, two official plugins are available:
 
-You will see the Guitar La store running in your browser.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## 📦 Build for Production
-
-> If you want to generate a ready-to-deploy version of the app, use:
-
-```bash
-npm run build
-```
-
-This will create a `dist/` folder with the optimized production files.
-
----
-
-## 🎓 Based On
-
-This project was created during a course by [Juan de la Torre](https://codigoconjuan.com/), focused on modern React development with custom hooks and real-world examples.
-
----
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
