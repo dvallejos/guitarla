@@ -46,9 +46,7 @@ src/
 
 If you upload a screenshot of the project, save it as `screenshot.png` in the root folder. It will display like this:
 
-```markdown
 ![Guitar La Screenshot](./screenshot.png)
-```
 
 ---
 
